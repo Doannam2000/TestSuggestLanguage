@@ -38,4 +38,14 @@
         android:layout_height="wrap_content"
         android:text="Click vào đây" />
 
+    <com.dd.wan.testlanguage.ProgressButton
+        android:id="@+id/progress_button"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:paddingHorizontal="5dp"
+        android:text="@string/hide_image_empty"
+        app:cornerRadius="8dp"
+        app:progressMargin="2dp" />
+
 </LinearLayout>

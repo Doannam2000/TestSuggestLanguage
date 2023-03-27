@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.btnClick.setOnClickListener {
-            AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags("en"))
+            binding.progressButton.setProgressAnimate(100)
         }
         binding.btnClick2.setOnClickListener {
             AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags("vi"))
@@ -29,5 +29,7 @@ class MainActivity : AppCompatActivity() {
         binding.btnClick4.setOnClickListener {
             AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags("de"))
         }
+
+        binding.progressButton.setMaxProgress(100)
     }
 }
